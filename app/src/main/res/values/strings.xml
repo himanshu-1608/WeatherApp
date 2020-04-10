@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Your Weather</string>
+    <string name="myt1">°F</string>
+    <string name="myt2">77</string>
+    <string name="myt3">Rewari</string>
+    <string name="myt4">Sunny</string>
+    <string name="myt5">IMAGE OF WEATHER</string>
+    <string name="weather_hint">Enter your location…</string>
+</resources>
