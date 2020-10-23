@@ -3,6 +3,7 @@ package com.example.weatherapp;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -34,6 +35,8 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
+
+        getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.black));
 
         currentWeatherService   = new CurrentWeatherService(WeatherActivity.this);
         weatherContainer        = findViewById(R.id.weather_container);
